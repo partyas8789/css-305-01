@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .maincontainer{
+            width:100vw;
+            height: 100vh;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+        }
+        .upperpart{
+            width:100%;
+            height: 10%;
+            background-color: #0a0a23;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* border: 2px solid red; */
+        }
+        hr{
+            border: 2px solid #fbbe65;
+            width:100%;
+        }
+        .lowerpart{
+            width:100%;
+            height: 90%;
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .lowerupper{
+            width:75%;
+            height: 45%;
+            /* border: 2px solid green; */
+            margin-top: 1rem;
+            display: flex;
+            
+        }
+        .lowerlower{
+            width:75%;
+            height: 45%;
+            /* border: 2px solid green; */
+            margin-top: 1rem;
+            display: flex;
+        }
+        .photo{
+            width: 30%;
+            height: 90%;
+            /* border: 2px solid green; */
+            margin: .5rem;
+            border-radius: 10px;
+            overflow: hidden;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="upperpart">
+            <h3 style="color: WHITE;">CSS FLEXBOX PHOTO GALLERY</h3>
+            
+        </div>
+        <hr>
+        <div class="lowerpart">
+            <div class="lowerupper">
+                <div class="photo">
+                    <img width="100%" height="100%" src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg">
+                </div>
+                <div class="photo">
+                    <img width="100%" height="100%" src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg">
+                </div>
+                <div class="photo">
+                    <img width="100%" height="100%" src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg">
+                </div>
+            </div>
+            <div class="lowerlower">
+                <div class="photo">
+                    <img width="100%" height="100%" src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg">
+                </div>
+                <div class="photo">
+                    <img width="100%" height="100%" src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg">
+                </div>
+                <div class="photo">
+                    <img width="100%" height="100%" src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
